@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #f1f1f1;
+}
+
+body {
+    background-image: url('../recursos/neurona.jpg');
+    background-size: cover;  
+    background-position: center center; 
+    background-repeat: no-repeat; 
+  }
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #dcdcdc;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    color: #dcdcdc; 
+}
+
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    color: #dcdcdc; 
+}
+
+strong {
+    color: white; 
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #1e1e2f;
+    background-color: #ffd700; /* Amarillo dorado */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container{
+    margin: 10px 20px;
+}
+.button:hover {
+    background-color: #067a78; /* Amarillo más intenso */
+    color: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #f1f1f1;
+}
+
+.header {
+    background-color: #012727;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #ffd700; /* Amarillo dorado */
+}

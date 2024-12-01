@@ -1,0 +1,928 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#"
+     xml:base="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#actividades -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#actividades">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ActividadComplementaria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#capacidades -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#capacidades">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#caracteristicas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#caracteristicas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Caracteristica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#comportamientos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#comportamientos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comportamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#emociones -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#emociones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#estado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#funciones -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#funciones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#mecanicas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#mecanicas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ActividadComplementaria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Mecanica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#parametros -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#parametros">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Parametro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tareas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tareas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tieneUnNIvel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tieneUnNIvel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tipoDeAplicacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tipoDeAplicacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tipoDeTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#tipoDeTest"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#abreviacionTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#abreviacionTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#autorTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#autorTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionComportamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionComportamiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comportamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionEvento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#descripcionTest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#excitacionEstado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#excitacionEstado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreCapacidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreCapacidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreCaracteristica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreCaracteristica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Caracteristica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreEstado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreEstado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreMecanica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreMecanica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Mecanica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreMetodoReconocimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreMetodoReconocimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MetodoReconocimiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreNivel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreNivel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreTareaPsicologica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreTareaPsicologica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#nombreTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#rangoEdadTest -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#rangoEdadTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#rangoNivel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#rangoNivel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#valentiaEstado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#valentiaEstado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#valorParametro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#valorParametro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Parametro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ActividadComplementaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ActividadComplementaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Caracteristica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Caracteristica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comportamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comportamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#EmocionBasica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#EmocionBasica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#EmocionSecundaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#EmocionSecundaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitivaBasica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitivaBasica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitivaCompleja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitivaCompleja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Mecanica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Mecanica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MetodoReconocimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MetodoReconocimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Parametro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Parametro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoAplicacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoAplicacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionAfectiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaBasica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaBasica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#DimensionCognitiva"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Alegria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Alegria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Alto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Alto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Ansiedad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Ansiedad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Asombro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Asombro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Atencion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Atencion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Autocuidado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Autocuidado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Bajo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Bajo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comprension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comprension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ComunicacionAsertiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ComunicacionAsertiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Concentracion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Concentracion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ControlInhibitorio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ControlInhibitorio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Decision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Decision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Disgusto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Disgusto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Empatia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Empatia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Enojo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Enojo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Escrito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Escrito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoTest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evaluacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evaluacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Felicidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Felicidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FlexibilidadCognitiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FlexibilidadCognitiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Grupal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Grupal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoAplicacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Individual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Individual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoAplicacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Inspeccion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Inspeccion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Lenguaje -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Lenguaje">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MantenerEquilibrio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MantenerEquilibrio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Medio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Medio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Memoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Memoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MemoriaDeTrabajo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#MemoriaDeTrabajo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Miedo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Miedo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nostalgia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nostalgia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Oral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Oral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoTest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Percepcion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Percepcion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Planificacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Planificacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Practica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Practica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoFuncionCognitivaCompleja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeAsociacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeAsociacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeMemoriaVisual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeMemoriaVisual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeRapidezDeReaccion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeRapidezDeReaccion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeRaven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaDeRaven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Shock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Shock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Sorpresa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Sorpresa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Supervision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Supervision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Ternura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Ternura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionSecundaria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TestDeMemoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TestDeMemoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TestDeStroop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TestDeStroop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Tranquilidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Tranquilidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Tristeza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Tristeza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TipoEmocionBasica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#ActividadComplementaria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Capacidad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#FuncionCognitiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Nivel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#PruebaCognitiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#TareaPsicologica"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Caracteristica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Comportamiento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Emocion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Estado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Evento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/casad/ontologies/2024/10/COGAF#Parametro"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

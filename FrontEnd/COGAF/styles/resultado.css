@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #d4d4d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  body {
+    background-image: url('../recursos/neurona.jpg');;
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  }
+  
+  .card {
+    background: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .card-header {
+    background: #3a3a3a;
+    color: #f4f4f4;
+    padding: 10px; 
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #4a4a4a;
+    margin-bottom: 0px; 
+  }
+  
+  .card-body {
+    padding: 15px; 
+    line-height: 1.4; 
+    color: #e0e0e0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #4a4a4a;
+  }
+  
+  .table th {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+  }
+  
+  .table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .table td {
+    color: #d4d4d4;
+  }
+  
+
+  .table td:last-child {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    max-width: 400px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+
+  .error {
+    background: #292929;
+    border: 1px solid #4a4a4a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .error h2 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+  }
+  
+  .error p {
+    color: #d4d4d4;
+  }
+
+  .card-footer {
+    padding: 10px; 
+    text-align: center;
+    background: #3a3a3a;
+    border-top: 1px solid #4a4a4a;
+  }
+  
+  button#inicioBtn {
+    background-color: #4a4a4a; 
+    color: #f4f4f4; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button#inicioBtn:hover {
+    background-color: #6a6a6a; 
+  }
+  
+
+  

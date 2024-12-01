@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COGAF</title>
+  <link rel="stylesheet" media="all" href="styles/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>COGAF</h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="paginas/inicio.html">Inicio</a></li>
+            <li><a href="index.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+	<div class="row">
+			<h1>Bienvenido</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">Selecciona una función cognitiva y una capacidad específica, y te proporcionaremos información detallada </h4>
+			<h4 style="text-align: center;">sobre el test correspondiente, junto con recomendaciones personalizadas para mejorar esas habilidades.</h4>
+	</div>
+	<form id="miFormulario" onsubmit="procesarFormulario(event)">
+  <div class="row input-container">
+    <div class="col-xs-12">
+      <div class="styled-input wide">
+        <input type="text" id="nombre" name="nombre" required />
+        <label>Nombre</label>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="styled-input">
+        <select class="styled-input" id="funcionCognitiva" name="funcionCognitiva" onchange="actualizarCapacidades()" required>
+          <option value="" disabled selected>Funcion Cognitiva</option>
+          <option value="ATENCION">Atencion</option>
+          <option value="MEMORIA_OPERATIVA">Memoria operativa</option>
+          <option value="PERCEPCION">Percepcion</option>
+          <option value="FLEXIBILIDAD_COGNITIVA">Flexibilidad Cognitiva</option>
+          <option value="CONTROL_INHIBITORIO">Control inhibitorio</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="styled-input" style="float:right;">
+        <select class="styled-input" id="capacidad" name="capacidad" required>
+          <option value="" disabled selected>Capacidad</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+        <button type="submit" class="btn-lrg submit-btn">Recomiéndame una categoría de juego</button>
+    </div>
+  </div>
+</form>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
